@@ -3,7 +3,7 @@ import logo from '../../bangladesh cricket logo.png';
 const Header = () => {
     return (
 
-        <nav className="container navbar navbar-expand-lg navbar-light bg-light">
+        <nav className=" navbar navbar-expand-lg navbar-light bg-light">
             <div className="container">
                 <a className="navbar-brand" href="#">
                     <img width={"100px"} src={logo} alt="" />
