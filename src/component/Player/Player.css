@@ -1,22 +1,5 @@
-.player-container{
-    display: flex;
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid lightgray;
-    border-radius: 10px;
-}
 .player-image img{
-    box-shadow: 5px 5px 5px gray;
+    box-shadow: 3px 3px 8px rgb(128 128 128 / 55%);
     border-radius: 5px;
-    width: 200px;
-}
-.player-details{
-    margin-left: 50px;
-}
-.player-details button{
-    margin-top: 20px;
-    cursor: pointer;
-}
-p{
-    margin: 5px;
+    width: 130px;
 }

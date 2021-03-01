@@ -1,12 +1,15 @@
 import './App.css';
-import PlayerCount from './component/PlayerCount/PlayerCount';
+import Maine from './component/Maine/Maine';
+import Header from './component/Header/Header';
+import Footer from './component/Footer/Footer';
 
 function App() {
 
   return (
     <div>
-      
-       <PlayerCount></PlayerCount>
+      <Header></Header>
+      <Maine></Maine>
+      <Footer></Footer>
     </div>
   );
 }

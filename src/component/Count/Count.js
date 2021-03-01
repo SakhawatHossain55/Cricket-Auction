@@ -1,7 +1,7 @@
 import React from 'react';
-import './Count.css'
 
 const Count = (props) => {
+    // data restructuring
     const count = props.count;
 
     const totalSalary = count.reduce((total, prd) => total + prd.salary, 0);
@@ -11,7 +11,7 @@ const Count = (props) => {
         const player = count[i];
         salary = player.salary;
     }
-    let name = '....';
+    let name = '';
     for (let i = 0; i < count.length; i++) {
         const player = count[i];
         name = player.name;
@@ -20,14 +20,18 @@ const Count = (props) => {
     return (
         <div>
             <h3 className="d-flex justify-content-center">Selected Player</h3>
-            <div className="playerDetails">
-                <ol>
-                    {
-                       count.map((players) =><li key={players.id}>{players.name} - ${players.salary}</li>)
-                    }
-                </ol>
-            </div>
-            <div className="playerDetails">
+
+            <ul class="list-group">
+                {
+                    count.map((players) =>
+                        <li className="list-group-item d-flex justify-content-between align-items-center">
+                            {players.name}
+                            <span style={{ background: '#31D2F2' }} className="badge badgePrimary badge-pill"> $ {players.salary}</span>
+                        </li>)
+                }
+            </ul>
+
+            <div className="border p-2 rounded mt-3">
                 <p>Player Count : {count.length}</p>
                 <p>Total Amount : {totalSalary}</p>
             </div>
